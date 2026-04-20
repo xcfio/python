@@ -1,8 +1,5 @@
 def abs(x):
-    if x < 0:
-        return -x
-    else:
-        return x
+    return -x if x < 0 else x
 
 
 def all(iterable):
@@ -61,6 +58,9 @@ def round(number, n=0):
     x = str(number).split(".")
 
     [integer_part, decimal_part] = x
+    if n == 0:
+        return float(integer_part)
+
     decimal_part = decimal_part[: n + 1]
 
     return float(integer_part + "." + decimal_part)
