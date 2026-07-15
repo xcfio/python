@@ -2,18 +2,18 @@ from typing import Iterable, Any
 
 
 # 01 - String Concatenation
-def concat(s1: str, s2: str) -> str:
-    return s1 + s2
+def concat(x: str, y: str) -> str:
+    return x + y
 
 
 # 02 - Math Power
-def pow(num: float, pow: float) -> float:
-    return num**pow
+def pow(n: float, p: float) -> float:
+    return n**p
 
 
 # 03 - Math Square Root
-def sqrt(num: float) -> float:
-    return num**0.5
+def sqrt(n: float) -> float:
+    return n**0.5
 
 
 # 04 - Math PI
@@ -45,61 +45,56 @@ def ceil(x: float) -> int:
         return int(x) + 1
 
 
-# 08 - Number Round
-def round(num: float, n: int = 0) -> float:
-    x = str(num).split(".")
-
-    [i, d] = x
-    d = d[: n + 1]
-
-    return float(i + "." + d)
-
-
-# 09 - Iterable Sum
-def sum(it: Iterable[float]) -> float:
+# 08 - Iterable Sum
+def sum(x: Iterable[float]) -> float:
     t: float = 0
-    for i in it:
+    for i in x:
         t += i
     return t
 
 
-# 10 - Iterable All
-def all(it: Iterable) -> bool:
-    for i in it:
+# 09 - Iterable All
+def all(x: Iterable) -> bool:
+    for i in x:
         if not i:
             return False
     return True
 
 
-# 11 - Iterable Any
-def any(it: Iterable) -> bool:
-    for i in it:
+# 10 - Iterable Any
+def any(x: Iterable) -> bool:
+    for i in x:
         if i:
             return True
     return False
 
 
-# 12 - Iterable Len
-def len(it: Iterable) -> int:
+# 11 - Iterable Len
+def len(x: Iterable) -> int:
     c = 0
-    for _ in it:
+    for _ in x:
         c += 1
     return c
 
 
-# 13 - Iterable Max
-def max(it: list) -> Any:
-    m = it[0]
-    for i in it:
+# 12 - Iterable Max
+def max(x: list) -> Any:
+    m = x[0]
+    for i in x:
         if i > m:
             m = i
     return m
 
 
-# 14 - Iterable Min
-def min(it: list) -> Any:
-    m = it[0]
-    for i in it:
+# 13 - Iterable Min
+def min(x: list) -> Any:
+    m = x[0]
+    for i in x:
         if i < m:
             m = i
     return m
+
+
+# 14 - Iterable Reverse
+def reverse(x: list) -> list:
+    return x[::-1]
