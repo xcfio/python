@@ -20,26 +20,17 @@ def pi():
 
 # 05 - Math Absolute Value
 def abs(x):
-    if x < 0:
-        return -x
-    else:
-        return x
+    return -x if x < 0 else x
 
 
 # 06 - Math Floor
 def floor(x):
-    if x < 0:
-        return int(x) - 1
-    else:
-        return int(x)
+    return int(x) - 1 if x < int(x) else int(x)
 
 
 # 07 - Math Ceiling
 def ceil(x):
-    if x < 0:
-        return int(x)
-    else:
-        return int(x) + 1
+    return int(x) + 1 if x > int(x) else int(x)
 
 
 # 08 - Iterable Sum
