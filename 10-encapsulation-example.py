@@ -1,14 +1,14 @@
-class Account:
-    def __init__(self, balance):
-        self.__balance = balance
+class OrangeBasket:
+    def __init__(self, count):
+        self.__count = count
 
-    def deposit(self, amount):
-        self.__balance += amount
+    def add(self, amount):
+        self.__count += amount
 
-    def get_balance(self):
-        return self.__balance
+    def get_count(self):
+        return self.__count
 
 
-a = Account(1000)
-a.deposit(500)
-print(a.get_balance())
+basket = OrangeBasket(10)
+basket.add(5)
+print(basket.get_count())

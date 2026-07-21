@@ -1,12 +1,12 @@
-class Animal:
-    def sound(self):
-        print("Animal makes a sound")
+class Fruit:
+    def taste(self):
+        print("Fruit has a taste")
 
 
-class Dog(Animal):
-    def sound(self):
-        print("Dog barks")
+class Orange(Fruit):
+    def taste(self):
+        print("Orange is sour and sweet")
 
 
-d = Dog()
-d.sound()
+org = Orange()
+org.taste()

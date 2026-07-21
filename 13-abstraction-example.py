@@ -1,19 +1,19 @@
 from abc import ABC, abstractmethod
 
 
-class Shape(ABC):
+class Fruit(ABC):
     @abstractmethod
-    def area(self):
+    def taste(self):
         pass
 
 
-class Square(Shape):
-    def __init__(self, side):
-        self.side = side
+class Orange(Fruit):
+    def __init__(self, size):
+        self.size = size
 
-    def area(self):
-        return self.side * self.side
+    def taste(self):
+        return self.size * self.size
 
 
-s = Square(4)
-print(s.area())
+o = Orange(4)
+print(o.taste())

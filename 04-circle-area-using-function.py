@@ -1,5 +1,8 @@
+from math import pi
+
+
 def circle_area(r):
-    return 3.1416 * (r**2)
+    return pi * (r**2)
 
 
 r = float(input("Radius: "))

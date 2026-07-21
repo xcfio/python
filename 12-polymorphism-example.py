@@ -1,12 +1,12 @@
-class Cat:
-    def sound(self):
-        print("Cat meows")
+class Lemon:
+    def taste(self):
+        print("Lemon is sour")
 
 
-class Cow:
-    def sound(self):
-        print("Cow moos")
+class Orange:
+    def taste(self):
+        print("Orange is sweet")
 
 
-for animal in (Cat(), Cow()):
-    animal.sound()
+for fruit in (Lemon(), Orange()):
+    fruit.taste()
