@@ -22,10 +22,6 @@ class QuadraticEquation:
 # P3
 class Triangle:
     def __init__(self, a, b, c):
-        if a + b > c and b + c > a and c + a > b:
-            print("Not possible")
-            return
-
         s = (a + b + c) / 2
         a = sqrt(s * (s - a) * (s - b) * (s - c))
         print(f"Area is {a}")
