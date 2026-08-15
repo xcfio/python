@@ -1,5 +1,9 @@
 def fibo(n):
-    if n <= 1:
-        return n
+    l = []
 
-    return fibo(n - 1) + fibo(n - 2)
+    a, b = 0, 1
+    for _ in range(n + 1):
+        l.append(a)
+        a, b = b, a + b
+
+    return l
